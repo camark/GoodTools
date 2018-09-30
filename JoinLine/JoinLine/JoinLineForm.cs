@@ -53,7 +53,10 @@ namespace JoinLine
 
                 String ret = String.Join(tscbSplit.Text, target_Texts);
 
-                MessageBox.Show(ret);
+                new TextMsgBox.MsgTextForm
+                {
+                    msg = ret
+                }.ShowDialog();
             }
 		}
 	}
